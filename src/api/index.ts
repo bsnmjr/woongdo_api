@@ -44,12 +44,14 @@ router.use('/api/calendar/addCalendar', addCalendar);
 router.use('/api/calendar/deleteCalendar', deleteCalendar);
 router.use('/api/calendar/modifyCalendar', modifyCalendar);
 
+router.use('/api/dknews_jpg', express.static(path.join(__dirname,'dknews_jpg')));
+
 router.post('/api/token', async (req: Request, res: Response, next: NextFunction) => {
     const { token }: { token: string } = Object.assign(req.body, req.query);
     const result: { isError: boolean, returnValue: jwtTokenType } = await jwtToken.verifyToken(token);
     return res.json(result);
 });
 
-router.post('/api/dknews_jpg', express.static(path.join(__dirname,'dknews_jpg')));
+//console.log( '__dirname', __dirname );
 
 export = router;
