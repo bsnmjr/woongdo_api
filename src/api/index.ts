@@ -49,4 +49,6 @@ router.post('/api/token', async (req: Request, res: Response, next: NextFunction
     return res.json(result);
 });
 
+router.post('/api/dknews_jpg', express.static(path.join(__dirname,'dknews_jpg')));
+
 export = router;
