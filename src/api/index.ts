@@ -19,6 +19,7 @@ import modifyCalendar from './calendar/modifyCalendar';
 import { jwtToken } from '../token';
 import * as dotenv from 'dotenv';
 import { jwtTokenType } from '../types';
+import path from 'path';
 
 dotenv.config();
 
