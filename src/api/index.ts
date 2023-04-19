@@ -16,6 +16,7 @@ import viewCalendar from './calendar/viewCalendar';
 import addCalendar from './calendar/addCalendar';
 import deleteCalendar from './calendar/deleteCalendar';
 import modifyCalendar from './calendar/modifyCalendar';
+import viewDKNews from './dknews/viewDKNews';
 import { jwtToken } from '../token';
 import * as dotenv from 'dotenv';
 import { jwtTokenType } from '../types';
@@ -45,6 +46,7 @@ router.use('/api/calendar/deleteCalendar', deleteCalendar);
 router.use('/api/calendar/modifyCalendar', modifyCalendar);
 
 router.use('/api/dknews_jpg', express.static(path.join(__dirname,'dknews_jpg')));
+router.use('/api/dknews/viewDKNews', viewDKNews);
 
 router.post('/api/token', async (req: Request, res: Response, next: NextFunction) => {
     const { token }: { token: string } = Object.assign(req.body, req.query);
