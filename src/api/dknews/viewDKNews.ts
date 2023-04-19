@@ -13,12 +13,12 @@ router.get('/', async (req: Request, res: Response) => {
         rows: [ 
             { 'name': 'dknew1.jpg' },  
             { 'name': 'dknew2.jpg' }, 
-            { 'name': 'dknew1.jpg' }, 
-            { 'name': 'dknew1.jpg' }, 
-            { 'name': 'dknew1.jpg' }, 
-            { 'name': 'dknew1.jpg' }, 
-            { 'name': 'dknew1.jpg' }, 
-            { 'name': 'dknew1.jpg' }, 
+            { 'name': 'dknew3.jpg' }, 
+            { 'name': 'dknew4.jpg' }, 
+            { 'name': 'dknew5.jpg' }, 
+            { 'name': 'dknew6.jpg' }, 
+            { 'name': 'dknew7.jpg' }, 
+            { 'name': 'dknew8.jpg' }, 
         ]
     });
 /*
